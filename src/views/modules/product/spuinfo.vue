@@ -102,7 +102,7 @@ export default {
     },
     // 获取数据列表
     getDataList() {
-      this.dataListLoading = true;
+      this.dataListLoading = false;
       let param = {};
       Object.assign(param, this.dataForm, {
         page: this.pageIndex,

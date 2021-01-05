@@ -1,0 +1,11 @@
+1 首页侧边栏实现
+main.vue -->
+  head->main-navbar
+  侧边栏->main-sidebar
+  内容->main-content
+2 路由跳转方法：$router.push({ name: 'home' })
+3 菜单配置及跳转方法封装类-->main-sidebar-sub-menu
+4 首页菜单数据获取router/index.js  router.beforeEach
+5 注意**************
+  为方便测试，更改了所有的 this.dataListLoading = false  this.dataListLoading = false;
+  接口上线后，全局替换为this.dataListLoading = true

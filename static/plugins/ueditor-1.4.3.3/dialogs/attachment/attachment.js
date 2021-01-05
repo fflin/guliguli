@@ -629,7 +629,7 @@
             var _this = this;
 
             if(!_this.listEnd && !this.isLoadingData) {
-                this.isLoadingData = true;
+                this.isLoadingData = false;// todo true
                 ajax.request(editor.getActionUrl(editor.getOpt('fileManagerActionName')), {
                     timeout: 100000,
                     data: utils.extend({

@@ -124,7 +124,7 @@ export default {
     this.getDataList();
   },
   created() {
-    
+
   },
   methods: {
     opendrawer(row){
@@ -160,7 +160,7 @@ export default {
             type: "success",
             duration: 1500
           });
-          
+
           this.userId = "";
           this.getDataList();
         } else {
@@ -182,7 +182,7 @@ export default {
     },
     // 获取数据列表
     getDataList() {
-      this.dataListLoading = true;
+      this.dataListLoading = false;
       this.$http({
         url: this.$http.adornUrl("/ware/purchase/list"),
         method: "get",

@@ -36,7 +36,7 @@
       <el-table-column prop="status" header-align="center" align="center" label="启用状态">
         <template slot-scope="scope">
           <el-switch
-            v-model="scope.row.status" 
+            v-model="scope.row.status"
             active-color="#13ce66"
             inactive-color="#ff4949"
             :active-value="1"
@@ -92,7 +92,7 @@ export default {
   methods: {
     // 获取数据列表
     getDataList() {
-      this.dataListLoading = true;
+      this.dataListLoading = false;
       this.$http({
         url: this.$http.adornUrl("/member/member/list"),
         method: "get",

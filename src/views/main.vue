@@ -32,7 +32,7 @@
     },
     data () {
       return {
-        loading: true
+        loading: false
       }
     },
     components: {

@@ -127,7 +127,7 @@
     methods: {
       // 获取数据列表
       getDataList () {
-        this.dataListLoading = true
+        this.dataListLoading = false
         this.$http({
           url: this.$http.adornUrl('/sys/schedule/list'),
           method: 'get',

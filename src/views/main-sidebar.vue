@@ -6,10 +6,12 @@
         :collapse="sidebarFold"
         :collapseTransition="false"
         class="site-sidebar__menu">
+        <!--不可折叠菜单栏-->
         <el-menu-item index="home" @click="$router.push({ name: 'home' })">
           <icon-svg name="shouye" class="site-sidebar__menu-icon"></icon-svg>
           <span slot="title">首页</span>
         </el-menu-item>
+        <!--写死的菜单栏-->
         <el-submenu index="demo">
           <template slot="title">
             <icon-svg name="shoucang" class="site-sidebar__menu-icon"></icon-svg>
@@ -24,6 +26,7 @@
             <span slot="title">ueditor</span>
           </el-menu-item>
         </el-submenu>
+        <!--可折叠菜单栏-->
         <sub-menu
           v-for="menu in menuList"
           :key="menu.menuId"

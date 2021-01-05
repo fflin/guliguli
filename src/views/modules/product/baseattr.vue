@@ -165,7 +165,7 @@ export default {
     },
     // 获取数据列表
     getDataList() {
-      this.dataListLoading = true;
+      this.dataListLoading = false;
       let type = this.attrtype == 0 ? "sale" : "base";
       this.$http({
         url: this.$http.adornUrl(`/product/attr/${type}/list/${this.catId}`),

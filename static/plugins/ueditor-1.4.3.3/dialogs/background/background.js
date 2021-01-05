@@ -256,7 +256,7 @@
             var _this = this;
 
             if(!_this.listEnd && !this.isLoadingData) {
-                this.isLoadingData = true;
+                this.isLoadingData = false;// todo true
                 var url = editor.getActionUrl(editor.getOpt('imageManagerActionName')),
                     isJsonp = utils.isCrossDomainUrl(url);
                 ajax.request(url, {
